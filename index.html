@@ -1,0 +1,558 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Villa Mira Kalkan — Private Retreat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+      <a href="#home" class="nav-logo"
+        ><b>Villa Mira</b><small>Kalkan · Turkey</small></a
+      >
+      <ul class="nav-links">
+        <li><a href="#about">The Villa</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#calendar">Availability</a></li>
+        <li><a href="#contact" class="nav-book">Book Now</a></li>
+      </ul>
+      <button class="nav-burger" id="burger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+
+    <div class="drawer" id="drawer">
+      <button class="dx" id="dx">✕</button>
+      <ul>
+        <li><a href="#about">The Villa</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#amenities">Amenities</a></li>
+        <li><a href="#calendar">Availability</a></li>
+        <li><a href="#contact">Book Now</a></li>
+      </ul>
+    </div>
+
+    <!-- ══ HERO ══════════════════════════════════════ -->
+    <section class="hero" id="home">
+      <div class="hero-bg">
+        <img
+          src="img/exterior.jpg"
+          alt="Villa Mira Kalkan"
+          style="
+            position: absolute;
+            inset: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            object-position: center 40%;
+            z-index: 0;
+          "
+        />
+      </div>
+      <div class="hero-blob"></div>
+      <div class="hero-blob2"></div>
+
+      <div class="hero-content">
+        <div class="hero-eyebrow">
+          <span class="lbl">Kalkan · Turkish Riviera</span>
+        </div>
+        <h1 class="hero-h1">
+          Where Nature<br />
+          <em>Holds its Breath</em>
+        </h1>
+        <p class="hero-p">
+          A private luxury villa wrapped in forest and sea — perched above
+          Kalkan, open to the sky.
+        </p>
+        <div class="hero-btns">
+          <a href="#calendar" class="btn-teal">Check Availability</a>
+          <a href="#about" class="btn-ghost">Discover the Villa</a>
+        </div>
+      </div>
+
+      <!-- floating stats pill -->
+      <div class="hero-pill">
+        <div class="hp-item">
+          <span class="hp-n">4</span>
+          <span class="hp-l">Bedrooms</span>
+        </div>
+        <div class="hp-item">
+          <span class="hp-n">8</span>
+          <span class="hp-l">Guests</span>
+        </div>
+        <div class="hp-item">
+          <span class="hp-n">1</span>
+          <span class="hp-l">Private Pool</span>
+        </div>
+        <div class="hp-item">
+          <span class="hp-n">∞</span>
+          <span class="hp-l">Sea View</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ INTRO / ABOUT ════════════════════════════ -->
+    <section class="intro" id="about">
+      <div class="intro-blob"></div>
+
+      <div class="intro-left r-left">
+        <span class="lbl">The Villa</span>
+        <h2 class="intro-h2">
+          Rooted in Nature,<br />
+          <em>Open to the Sea</em>
+        </h2>
+        <p class="intro-p">
+          Nestled into the green hills above Kalkan, Villa Mira was designed to
+          disappear into its surroundings. Ancient olive trees frame a private
+          pool that seems to pour into the Aegean below.
+        </p>
+        <p class="intro-p">
+          Fully furnished, fully staffed. From sunrise coffee on the terrace to
+          late-night swims under the stars — every detail is already handled.
+        </p>
+        <div class="intro-line"></div>
+        <a href="#gallery" class="btn-ghost" style="width: max-content"
+          >Explore the Spaces →</a
+        >
+      </div>
+
+      <div class="intro-right r-right">
+        <div class="intro-card">
+          <img src="img/entrance.jpg" alt="Villa Mira girişi" />
+        </div>
+        <div class="intro-card-accent"></div>
+      </div>
+    </section>
+
+    <!-- ══ GALLERY ════════════════════════════════════ -->
+    <section class="gallery" id="gallery">
+      <div class="gallery-hd r">
+        <span class="lbl">Gallery</span>
+        <h2 class="gallery-h2">Every Corner,<br /><em>a World</em></h2>
+      </div>
+
+      <div class="g-wrap">
+        <div class="g-cell r">
+          <img src="img/hero.jpg" alt="Havuz ve Deniz" />
+          <div class="g-label">Pool & Sea</div>
+        </div>
+        <div class="g-cell r">
+          <img src="img/exterior.jpg" alt="Teras Manzarası" />
+          <div class="g-label">Sea Terrace</div>
+        </div>
+        <div class="g-cell r">
+          <img src="img/sunset.jpg" alt="Gün Batımı" />
+          <div class="g-label">Golden Hour</div>
+        </div>
+        <div class="g-cell r">
+          <img src="img/living.jpg" alt="Salon" />
+          <div class="g-label">Living Room</div>
+        </div>
+        <div class="g-cell r">
+          <img src="img/bedroom.jpg" alt="Yatak Odası" />
+          <div class="g-label">Master Suite</div>
+        </div>
+        <div class="g-cell r">
+          <img src="img/garden.jpg" alt="Bahçe" />
+          <div class="g-label">Garden</div>
+        </div>
+        <div class="g-cell r">
+          <img src="img/stairs.jpg" alt="İç Mekan" />
+          <div class="g-label">Interior</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ AMENITIES ════════════════════════════════ -->
+    <section class="amenities" id="amenities">
+      <div class="amenities-blob"></div>
+
+      <div class="am-hd r">
+        <span class="lbl">Amenities</span>
+        <h2 class="am-h2">Quietly<br /><em>Exceptional</em></h2>
+      </div>
+
+      <div class="am-grid">
+        <div class="am-card r">
+          <div class="am-ico">
+            <svg
+              viewBox="0 0 40 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            >
+              <ellipse cx="20" cy="30" rx="13" ry="4" />
+              <path d="M7 30C7 19 20 6 20 6s13 13 13 24" />
+              <path d="M14 23h12" />
+            </svg>
+          </div>
+          <div class="am-name">Private Pool</div>
+          <div class="am-desc">
+            Heated infinity-edge pool open from sunrise. Panoramic views of the
+            bay.
+          </div>
+        </div>
+
+        <div class="am-card r">
+          <div class="am-ico">
+            <svg
+              viewBox="0 0 40 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            >
+              <path
+                d="M20 6 C10 14 8 24 12 30 C14 34 20 36 20 36 C20 36 26 34 28 30 C32 24 30 14 20 6Z"
+              />
+              <path d="M16 30 C16 33 18 36 20 38 C22 36 24 33 24 30" />
+            </svg>
+          </div>
+          <div class="am-name">Garden & Olives</div>
+          <div class="am-desc">
+            Ancient olive trees, jasmine, bougainvillea — a living Mediterranean
+            landscape.
+          </div>
+        </div>
+
+        <div class="am-card r">
+          <div class="am-ico">
+            <svg
+              viewBox="0 0 40 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            >
+              <rect x="6" y="10" width="28" height="20" rx="2" />
+              <path d="M6 18h28M14 10V6M26 10V6" />
+            </svg>
+          </div>
+          <div class="am-name">Sea-View Terraces</div>
+          <div class="am-desc">
+            Multiple shaded terraces overlook Kalkan Bay — sunset drinks,
+            morning coffee.
+          </div>
+        </div>
+
+        <div class="am-card r">
+          <div class="am-ico">
+            <svg
+              viewBox="0 0 40 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            >
+              <path d="M8 30V18l12-9 12 9v12H8z" />
+              <rect x="15" y="22" width="10" height="8" />
+            </svg>
+          </div>
+          <div class="am-name">Full Kitchen</div>
+          <div class="am-desc">
+            Professional appliances, espresso, complete cookware. Or let us
+            arrange a private chef.
+          </div>
+        </div>
+
+        <div class="am-card r">
+          <div class="am-ico">
+            <svg
+              viewBox="0 0 40 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            >
+              <path d="M6 30c0-7.73 6.27-14 14-14s14 6.27 14 14" />
+              <circle cx="20" cy="12" r="5" />
+            </svg>
+          </div>
+          <div class="am-name">Dedicated Concierge</div>
+          <div class="am-desc">
+            Boat charters, restaurant reservations, airport transfers — handled
+            before you ask.
+          </div>
+        </div>
+
+        <div class="am-card r">
+          <div class="am-ico">
+            <svg
+              viewBox="0 0 40 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            >
+              <rect x="4" y="14" width="32" height="20" rx="2" />
+              <path d="M14 14v-4a6 6 0 0 1 12 0v4" />
+              <circle cx="20" cy="24" r="3" />
+            </svg>
+          </div>
+          <div class="am-name">Secure Parking</div>
+          <div class="am-desc">
+            Private gated parking for two vehicles, monitored 24/7.
+          </div>
+        </div>
+
+        <div class="am-card r">
+          <div class="am-ico">
+            <svg
+              viewBox="0 0 40 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            >
+              <path d="M8 8h24v24H8z" rx="2" />
+              <path d="M14 32v4M26 32v4M4 20h32" />
+              <circle cx="20" cy="24" r="3" />
+            </svg>
+          </div>
+          <div class="am-name">High-Speed WiFi</div>
+          <div class="am-desc">
+            Fibre throughout — work from the terrace, stream on every screen.
+          </div>
+        </div>
+
+        <div class="am-card r">
+          <div class="am-ico">
+            <svg
+              viewBox="0 0 40 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            >
+              <circle cx="20" cy="20" r="14" />
+              <path d="M20 10v10l7 4" />
+            </svg>
+          </div>
+          <div class="am-name">Air Conditioning</div>
+          <div class="am-desc">
+            Individual climate control in every bedroom and living area.
+          </div>
+        </div>
+
+        <div class="am-card r">
+          <div class="am-ico">
+            <svg
+              viewBox="0 0 40 40"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="1.2"
+              stroke-linecap="round"
+            >
+              <path d="M6 28 L12 18 L18 23 L26 12 L34 22" />
+              <path d="M6 32h28" />
+            </svg>
+          </div>
+          <div class="am-name">Smart TVs</div>
+          <div class="am-desc">
+            Netflix, Apple TV+, satellite — in every bedroom and the main living
+            room.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CALENDAR ══════════════════════════════════ -->
+    <section class="cal" id="calendar">
+      <div class="cal-blob"></div>
+      <div class="cal-inner">
+        <div class="cal-hd r">
+          <span class="lbl">Availability</span>
+          <h2 class="cal-h2">Find Your<br /><em>Window of Time</em></h2>
+          <p class="cal-sub">
+            Live calendar synced across all platforms. Open dates are yours to
+            claim.
+          </p>
+        </div>
+
+        <!--
+    ═══════════════════════════════════════════
+    RENTALBELL WIDGET BURAYA
+    ───────────────────────────────────────────
+    1. rentalbell.com → giriş
+    2. Kiralanın sayfası → Calendar Tools
+       → Public Calendar & Widget Creator
+       → Widget Creator
+    3. Özelleştir → Get the Code → Widget Code
+    4. Aşağıdaki .cal-ph div'ini SİL,
+       <iframe ...> kodunu yapıştır
+       (.cal-box div'inin içine)
+    ═══════════════════════════════════════════
+    -->
+
+        <div class="cal-box r">
+          <iframe
+            src="https://calendar.google.com/calendar/embed?src=e3qolveg8q4lsnjhcqi4sjpcabeu37c1%40import.calendar.google.com&ctz=Europe%2FIstanbul&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&bgcolor=%231C2B2E&color=%235DCAA5"
+            style="border: none; display: block; border-radius: 16px 16px 0 0"
+            width="100%"
+            height="580"
+            frameborder="0"
+            scrolling="no"
+          >
+          </iframe>
+
+          <div class="cal-legend">
+            <div class="leg"><span class="dot dot-a"></span>Available</div>
+            <div class="leg"><span class="dot dot-b"></span>Booked</div>
+            <div class="leg"><span class="dot dot-c"></span>Check-in / out</div>
+          </div>
+        </div>
+
+        <div class="cal-after r">
+          <p>Ready to reserve? We reply within 24 hours.</p>
+          <a href="#contact" class="btn-teal">Request a Booking</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ CONTACT ════════════════════════════════════ -->
+    <section class="contact" id="contact">
+      <div class="contact-blob"></div>
+
+      <div class="contact-wrap">
+        <div class="c-left r-left">
+          <span class="lbl">Get in Touch</span>
+          <h2 class="c-h2">Ready for<br /><em>Your Stay?</em></h2>
+          <p class="c-p">
+            Tell us your dates and group size. We take care of everything — from
+            arrival to departure, and all the moments in between.
+          </p>
+          <div class="c-info">
+            <div>
+              <div class="ci-label">Location</div>
+              <div class="ci-val">Kalkan, Kaş — Antalya, Turkey</div>
+            </div>
+            <div>
+              <div class="ci-label">Email</div>
+              <div class="ci-val">
+                <a href="mailto:info@villamirakalkan.com"
+                  >info@villamirakalkan.com</a
+                >
+              </div>
+            </div>
+            <div>
+              <div class="ci-label">WhatsApp / Phone</div>
+              <div class="ci-val">
+                <a href="tel:+90XXXXXXXXXX">+90 XXX XXX XX XX</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="c-right r-right">
+          <form
+            class="cf"
+            id="cf"
+            action="https://formsubmit.co/husnytarik@outlook.com"
+            method="POST"
+          >
+            <input
+              type="hidden"
+              name="_subject"
+              value="Villa Mira Kalkan – Booking Enquiry"
+            />
+            <input type="hidden" name="_next" value="thank-you.html" />
+            <input type="text" name="_honey" style="display: none" />
+
+            <div class="cf2">
+              <div class="cfg">
+                <label for="name">Full Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  placeholder="Jane Smith"
+                  required
+                />
+              </div>
+              <div class="cfg">
+                <label for="email">Email</label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  placeholder="jane@example.com"
+                  required
+                />
+              </div>
+            </div>
+            <div class="cf2">
+              <div class="cfg">
+                <label for="ci">Arrival</label>
+                <input type="date" id="ci" name="checkin" />
+              </div>
+              <div class="cfg">
+                <label for="co">Departure</label>
+                <input type="date" id="co" name="checkout" />
+              </div>
+            </div>
+            <div class="cf2">
+              <div class="cfg">
+                <label for="guests">Guests</label>
+                <input
+                  type="number"
+                  id="guests"
+                  name="guests"
+                  min="1"
+                  max="8"
+                  placeholder="2"
+                />
+              </div>
+              <div class="cfg">
+                <label for="phone">Phone (optional)</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  placeholder="+90 XXX XXX XX XX"
+                />
+              </div>
+            </div>
+            <div class="cfg">
+              <label for="msg">Message</label>
+              <textarea
+                id="msg"
+                name="message"
+                rows="4"
+                placeholder="Special requests, questions…"
+              ></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Send Enquiry</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- ══ FOOTER ════════════════════════════════════ -->
+    <footer>
+      <div class="f-brand">
+        <b>Villa Mira</b>
+        <small>Kalkan · Turkey</small>
+      </div>
+      <nav class="f-links">
+        <a href="#about">The Villa</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#amenities">Amenities</a>
+        <a href="#calendar">Availability</a>
+        <a href="#contact">Contact</a>
+      </nav>
+      <div class="f-copy">&copy; 2025 Villa Mira Kalkan</div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
