@@ -62,9 +62,13 @@
     <!-- ══ HERO ══════════════════════════════════════ -->
     <section class="hero" id="home">
       <div class="hero-bg">
-        <img
-          src="img/exterior.jpg"
-          alt="Villa Mira Kalkan"
+        <video
+          autoplay
+          muted
+          loop
+          playsinline
+          disablepictureinpicture
+          poster="img/exterior.jpg"
           style="
             position: absolute;
             inset: 0;
@@ -74,7 +78,9 @@
             object-position: center 40%;
             z-index: 0;
           "
-        />
+        >
+          <source src="img/hero.mp4" type="video/mp4" />
+        </video>
       </div>
       <div class="hero-blob"></div>
       <div class="hero-blob2"></div>
