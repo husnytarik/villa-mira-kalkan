@@ -10,6 +10,7 @@
       href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap"
       rel="stylesheet"
     />
+    <link rel="icon" type="image/png" href="img/logo.png" />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
@@ -19,12 +20,17 @@
         ><b>Villa Mira</b><small>Kalkan · Turkey</small></a
       >
       <ul class="nav-links">
-        <li><a href="#about">The Villa</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#amenities">Amenities</a></li>
-        <li><a href="#calendar">Availability</a></li>
-        <li><a href="#contact" class="nav-book">Book Now</a></li>
+        <li><a href="#about" data-i18n="nav.villa">The Villa</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="#amenities" data-i18n="nav.amenities">Amenities</a></li>
+        <li><a href="#calendar" data-i18n="nav.availability">Availability</a></li>
+        <li><a href="#contact" class="nav-book" data-i18n="nav.book">Book Now</a></li>
       </ul>
+      <div class="lang-sw">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="tr">TR</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
       <button class="nav-burger" id="burger" aria-label="Menu">
         <span></span><span></span><span></span>
       </button>
@@ -33,12 +39,17 @@
     <div class="drawer" id="drawer">
       <button class="dx" id="dx">✕</button>
       <ul>
-        <li><a href="#about">The Villa</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#amenities">Amenities</a></li>
-        <li><a href="#calendar">Availability</a></li>
-        <li><a href="#contact">Book Now</a></li>
+        <li><a href="#about" data-i18n="nav.villa">The Villa</a></li>
+        <li><a href="#gallery" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="#amenities" data-i18n="nav.amenities">Amenities</a></li>
+        <li><a href="#calendar" data-i18n="nav.availability">Availability</a></li>
+        <li><a href="#contact" data-i18n="nav.book">Book Now</a></li>
       </ul>
+      <div class="drawer-lang">
+        <button class="lang-btn" data-lang="en">EN</button>
+        <button class="lang-btn" data-lang="tr">TR</button>
+        <button class="lang-btn" data-lang="ru">RU</button>
+      </div>
     </div>
 
     <!-- ══ HERO ══════════════════════════════════════ -->
@@ -63,19 +74,19 @@
 
       <div class="hero-content">
         <div class="hero-eyebrow">
-          <span class="lbl">Kalkan · Turkish Riviera</span>
+          <span class="lbl" data-i18n="hero.eyebrow">Kalkan · Turkish Riviera</span>
         </div>
-        <h1 class="hero-h1">
+        <h1 class="hero-h1" data-i18n-html="hero.h1">
           Where Nature<br />
           <em>Holds its Breath</em>
         </h1>
-        <p class="hero-p">
+        <p class="hero-p" data-i18n="hero.p">
           A private luxury villa wrapped in forest and sea — perched above
           Kalkan, open to the sky.
         </p>
         <div class="hero-btns">
-          <a href="#calendar" class="btn-teal">Check Availability</a>
-          <a href="#about" class="btn-ghost">Discover the Villa</a>
+          <a href="#calendar" class="btn-teal" data-i18n="hero.btn.availability">Check Availability</a>
+          <a href="#about" class="btn-ghost" data-i18n="hero.btn.villa">Discover the Villa</a>
         </div>
       </div>
 
@@ -83,19 +94,19 @@
       <div class="hero-pill">
         <div class="hp-item">
           <span class="hp-n">4</span>
-          <span class="hp-l">Bedrooms</span>
+          <span class="hp-l" data-i18n="hp.bedrooms">Bedrooms</span>
         </div>
         <div class="hp-item">
           <span class="hp-n">8</span>
-          <span class="hp-l">Guests</span>
+          <span class="hp-l" data-i18n="hp.guests">Guests</span>
         </div>
         <div class="hp-item">
           <span class="hp-n">1</span>
-          <span class="hp-l">Private Pool</span>
+          <span class="hp-l" data-i18n="hp.pool">Private Pool</span>
         </div>
         <div class="hp-item">
           <span class="hp-n">∞</span>
-          <span class="hp-l">Sea View</span>
+          <span class="hp-l" data-i18n="hp.view">Sea View</span>
         </div>
       </div>
     </section>
@@ -105,22 +116,22 @@
       <div class="intro-blob"></div>
 
       <div class="intro-left r-left">
-        <span class="lbl">The Villa</span>
-        <h2 class="intro-h2">
+        <span class="lbl" data-i18n="about.lbl">The Villa</span>
+        <h2 class="intro-h2" data-i18n-html="about.h2">
           Rooted in Nature,<br />
           <em>Open to the Sea</em>
         </h2>
-        <p class="intro-p">
+        <p class="intro-p" data-i18n="about.p1">
           Nestled into the green hills above Kalkan, Villa Mira was designed to
           disappear into its surroundings. Ancient olive trees frame a private
           pool that seems to pour into the Aegean below.
         </p>
-        <p class="intro-p">
+        <p class="intro-p" data-i18n="about.p2">
           Fully furnished, fully staffed. From sunrise coffee on the terrace to
           late-night swims under the stars — every detail is already handled.
         </p>
         <div class="intro-line"></div>
-        <a href="#gallery" class="btn-ghost" style="width: max-content"
+        <a href="#gallery" class="btn-ghost" style="width: max-content" data-i18n="about.btn"
           >Explore the Spaces →</a
         >
       </div>
@@ -136,38 +147,38 @@
     <!-- ══ GALLERY ════════════════════════════════════ -->
     <section class="gallery" id="gallery">
       <div class="gallery-hd r">
-        <span class="lbl">Gallery</span>
-        <h2 class="gallery-h2">Every Corner,<br /><em>a World</em></h2>
+        <span class="lbl" data-i18n="gallery.lbl">Gallery</span>
+        <h2 class="gallery-h2" data-i18n-html="gallery.h2">Every Corner,<br /><em>a World</em></h2>
       </div>
 
       <div class="g-wrap">
         <div class="g-cell r">
           <img src="img/hero.jpg" alt="Havuz ve Deniz" />
-          <div class="g-label">Pool & Sea</div>
+          <div class="g-label" data-i18n="gallery.pool">Pool & Sea</div>
         </div>
         <div class="g-cell r">
           <img src="img/exterior.jpg" alt="Teras Manzarası" />
-          <div class="g-label">Sea Terrace</div>
+          <div class="g-label" data-i18n="gallery.terrace">Sea Terrace</div>
         </div>
         <div class="g-cell r">
           <img src="img/sunset.jpg" alt="Gün Batımı" />
-          <div class="g-label">Golden Hour</div>
+          <div class="g-label" data-i18n="gallery.golden">Golden Hour</div>
         </div>
         <div class="g-cell r">
           <img src="img/living.jpg" alt="Salon" />
-          <div class="g-label">Living Room</div>
+          <div class="g-label" data-i18n="gallery.living">Living Room</div>
         </div>
         <div class="g-cell r">
           <img src="img/bedroom.jpg" alt="Yatak Odası" />
-          <div class="g-label">Master Suite</div>
+          <div class="g-label" data-i18n="gallery.suite">Master Suite</div>
         </div>
         <div class="g-cell r">
           <img src="img/garden.jpg" alt="Bahçe" />
-          <div class="g-label">Garden</div>
+          <div class="g-label" data-i18n="gallery.garden">Garden</div>
         </div>
         <div class="g-cell r">
           <img src="img/stairs.jpg" alt="İç Mekan" />
-          <div class="g-label">Interior</div>
+          <div class="g-label" data-i18n="gallery.interior">Interior</div>
         </div>
       </div>
     </section>
@@ -177,190 +188,128 @@
       <div class="amenities-blob"></div>
 
       <div class="am-hd r">
-        <span class="lbl">Amenities</span>
-        <h2 class="am-h2">Quietly<br /><em>Exceptional</em></h2>
+        <span class="lbl" data-i18n="am.lbl">Amenities</span>
+        <h2 class="am-h2" data-i18n-html="am.h2">Quietly<br /><em>Exceptional</em></h2>
       </div>
 
       <div class="am-grid">
         <div class="am-card r">
           <div class="am-ico">
-            <svg
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-            >
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
               <ellipse cx="20" cy="30" rx="13" ry="4" />
               <path d="M7 30C7 19 20 6 20 6s13 13 13 24" />
               <path d="M14 23h12" />
             </svg>
           </div>
-          <div class="am-name">Private Pool</div>
-          <div class="am-desc">
-            Heated infinity-edge pool open from sunrise. Panoramic views of the
-            bay.
+          <div class="am-name" data-i18n="am.pool.name">Private Pool</div>
+          <div class="am-desc" data-i18n="am.pool.desc">
+            Heated infinity-edge pool open from sunrise. Panoramic views of the bay.
           </div>
         </div>
 
         <div class="am-card r">
           <div class="am-ico">
-            <svg
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-            >
-              <path
-                d="M20 6 C10 14 8 24 12 30 C14 34 20 36 20 36 C20 36 26 34 28 30 C32 24 30 14 20 6Z"
-              />
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
+              <path d="M20 6 C10 14 8 24 12 30 C14 34 20 36 20 36 C20 36 26 34 28 30 C32 24 30 14 20 6Z" />
               <path d="M16 30 C16 33 18 36 20 38 C22 36 24 33 24 30" />
             </svg>
           </div>
-          <div class="am-name">Garden & Olives</div>
-          <div class="am-desc">
-            Ancient olive trees, jasmine, bougainvillea — a living Mediterranean
-            landscape.
+          <div class="am-name" data-i18n="am.garden.name">Garden & Olives</div>
+          <div class="am-desc" data-i18n="am.garden.desc">
+            Ancient olive trees, jasmine, bougainvillea — a living Mediterranean landscape.
           </div>
         </div>
 
         <div class="am-card r">
           <div class="am-ico">
-            <svg
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-            >
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
               <rect x="6" y="10" width="28" height="20" rx="2" />
               <path d="M6 18h28M14 10V6M26 10V6" />
             </svg>
           </div>
-          <div class="am-name">Sea-View Terraces</div>
-          <div class="am-desc">
-            Multiple shaded terraces overlook Kalkan Bay — sunset drinks,
-            morning coffee.
+          <div class="am-name" data-i18n="am.terrace.name">Sea-View Terraces</div>
+          <div class="am-desc" data-i18n="am.terrace.desc">
+            Multiple shaded terraces overlook Kalkan Bay — sunset drinks, morning coffee.
           </div>
         </div>
 
         <div class="am-card r">
           <div class="am-ico">
-            <svg
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-            >
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
               <path d="M8 30V18l12-9 12 9v12H8z" />
               <rect x="15" y="22" width="10" height="8" />
             </svg>
           </div>
-          <div class="am-name">Full Kitchen</div>
-          <div class="am-desc">
-            Professional appliances, espresso, complete cookware. Or let us
-            arrange a private chef.
+          <div class="am-name" data-i18n="am.kitchen.name">Full Kitchen</div>
+          <div class="am-desc" data-i18n="am.kitchen.desc">
+            Professional appliances, espresso, complete cookware. Or let us arrange a private chef.
           </div>
         </div>
 
         <div class="am-card r">
           <div class="am-ico">
-            <svg
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-            >
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
               <path d="M6 30c0-7.73 6.27-14 14-14s14 6.27 14 14" />
               <circle cx="20" cy="12" r="5" />
             </svg>
           </div>
-          <div class="am-name">Dedicated Concierge</div>
-          <div class="am-desc">
-            Boat charters, restaurant reservations, airport transfers — handled
-            before you ask.
+          <div class="am-name" data-i18n="am.concierge.name">Dedicated Concierge</div>
+          <div class="am-desc" data-i18n="am.concierge.desc">
+            Boat charters, restaurant reservations and more — handled before you ask.
           </div>
         </div>
 
         <div class="am-card r">
           <div class="am-ico">
-            <svg
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-            >
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
               <rect x="4" y="14" width="32" height="20" rx="2" />
               <path d="M14 14v-4a6 6 0 0 1 12 0v4" />
               <circle cx="20" cy="24" r="3" />
             </svg>
           </div>
-          <div class="am-name">Secure Parking</div>
-          <div class="am-desc">
+          <div class="am-name" data-i18n="am.parking.name">Secure Parking</div>
+          <div class="am-desc" data-i18n="am.parking.desc">
             Private gated parking for two vehicles, monitored 24/7.
           </div>
         </div>
 
         <div class="am-card r">
           <div class="am-ico">
-            <svg
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-            >
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
               <path d="M8 8h24v24H8z" rx="2" />
               <path d="M14 32v4M26 32v4M4 20h32" />
               <circle cx="20" cy="24" r="3" />
             </svg>
           </div>
-          <div class="am-name">High-Speed WiFi</div>
-          <div class="am-desc">
+          <div class="am-name" data-i18n="am.wifi.name">High-Speed WiFi</div>
+          <div class="am-desc" data-i18n="am.wifi.desc">
             Fibre throughout — work from the terrace, stream on every screen.
           </div>
         </div>
 
         <div class="am-card r">
           <div class="am-ico">
-            <svg
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-            >
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
               <circle cx="20" cy="20" r="14" />
               <path d="M20 10v10l7 4" />
             </svg>
           </div>
-          <div class="am-name">Air Conditioning</div>
-          <div class="am-desc">
+          <div class="am-name" data-i18n="am.ac.name">Air Conditioning</div>
+          <div class="am-desc" data-i18n="am.ac.desc">
             Individual climate control in every bedroom and living area.
           </div>
         </div>
 
         <div class="am-card r">
           <div class="am-ico">
-            <svg
-              viewBox="0 0 40 40"
-              fill="none"
-              stroke="currentColor"
-              stroke-width="1.2"
-              stroke-linecap="round"
-            >
+            <svg viewBox="0 0 40 40" fill="none" stroke="currentColor" stroke-width="1.2" stroke-linecap="round">
               <path d="M6 28 L12 18 L18 23 L26 12 L34 22" />
               <path d="M6 32h28" />
             </svg>
           </div>
-          <div class="am-name">Smart TVs</div>
-          <div class="am-desc">
-            Netflix, Apple TV+, satellite — in every bedroom and the main living
-            room.
+          <div class="am-name" data-i18n="am.tv.name">Smart TVs</div>
+          <div class="am-desc" data-i18n="am.tv.desc">
+            Netflix, Apple TV+, satellite — in every bedroom and the main living room.
           </div>
         </div>
       </div>
@@ -371,9 +320,9 @@
       <div class="cal-blob"></div>
       <div class="cal-inner">
         <div class="cal-hd r">
-          <span class="lbl">Availability</span>
-          <h2 class="cal-h2">Find Your<br /><em>Window of Time</em></h2>
-          <p class="cal-sub">
+          <span class="lbl" data-i18n="cal.lbl">Availability</span>
+          <h2 class="cal-h2" data-i18n-html="cal.h2">Find Your<br /><em>Window of Time</em></h2>
+          <p class="cal-sub" data-i18n="cal.sub">
             Live calendar synced across all platforms. Open dates are yours to
             claim.
           </p>
@@ -396,7 +345,7 @@
 
         <div class="cal-box r">
           <iframe
-            src="https://calendar.google.com/calendar/embed?src=e3qolveg8q4lsnjhcqi4sjpcabeu37c1%40import.calendar.google.com&ctz=Europe%2FIstanbul&mode=MONTH&showTitle=0&showNav=1&showDate=1&showPrint=0&showTabs=0&showCalendars=0&showTz=0&bgcolor=%231C2B2E&color=%235DCAA5"
+            src="https://calendar.google.com/calendar/embed?height=600&wkst=1&ctz=Europe%2FIstanbul&showPrint=0&showTabs=0&showCalendars=0&showTz=0&title=Villa%20Mira%20Kalkan&src=dmF2N3Bxcm92dmlzMHE2OWsxMXJvaG5vb3JtZ2VrZXFAaW1wb3J0LmNhbGVuZGFyLmdvb2dsZS5jb20&color=%23f6bf26"
             style="border: none; display: block; border-radius: 16px 16px 0 0"
             width="100%"
             height="580"
@@ -406,15 +355,15 @@
           </iframe>
 
           <div class="cal-legend">
-            <div class="leg"><span class="dot dot-a"></span>Available</div>
-            <div class="leg"><span class="dot dot-b"></span>Booked</div>
-            <div class="leg"><span class="dot dot-c"></span>Check-in / out</div>
+            <div class="leg"><span class="dot dot-a"></span><span data-i18n="cal.available">Available</span></div>
+            <div class="leg"><span class="dot dot-b"></span><span data-i18n="cal.booked">Booked</span></div>
+            <div class="leg"><span class="dot dot-c"></span><span data-i18n="cal.checkinout">Check-in / out</span></div>
           </div>
         </div>
 
         <div class="cal-after r">
-          <p>Ready to reserve? We reply within 24 hours.</p>
-          <a href="#contact" class="btn-teal">Request a Booking</a>
+          <p data-i18n="cal.after">Ready to reserve? We reply within 24 hours.</p>
+          <a href="#contact" class="btn-teal" data-i18n="cal.btn">Request a Booking</a>
         </div>
       </div>
     </section>
@@ -425,19 +374,19 @@
 
       <div class="contact-wrap">
         <div class="c-left r-left">
-          <span class="lbl">Get in Touch</span>
-          <h2 class="c-h2">Ready for<br /><em>Your Stay?</em></h2>
-          <p class="c-p">
+          <span class="lbl" data-i18n="contact.lbl">Get in Touch</span>
+          <h2 class="c-h2" data-i18n-html="contact.h2">Ready for<br /><em>Your Stay?</em></h2>
+          <p class="c-p" data-i18n="contact.p">
             Tell us your dates and group size. We take care of everything — from
             arrival to departure, and all the moments in between.
           </p>
           <div class="c-info">
             <div>
-              <div class="ci-label">Location</div>
-              <div class="ci-val">Kalkan, Kaş — Antalya, Turkey</div>
+              <div class="ci-label" data-i18n="contact.location.lbl">Location</div>
+              <div class="ci-val" data-i18n="contact.location.val">Kalkan, Kaş — Antalya, Turkey</div>
             </div>
             <div>
-              <div class="ci-label">Email</div>
+              <div class="ci-label" data-i18n="contact.email.lbl">Email</div>
               <div class="ci-val">
                 <a href="mailto:villamirakalkan@gmail.com"
                   >villamirakalkan@gmail.com</a
@@ -445,13 +394,13 @@
               </div>
             </div>
             <div>
-              <div class="ci-label">Phone</div>
+              <div class="ci-label" data-i18n="contact.phone.lbl">Phone</div>
               <div class="ci-val">
                 <a href="tel:+905349791370">+90 534 979 13 70</a>
               </div>
             </div>
             <div>
-              <div class="ci-label">WhatsApp</div>
+              <div class="ci-label" data-i18n="contact.wa.lbl">WhatsApp</div>
               <div class="ci-val">
                 <a href="https://wa.me/905349791370" target="_blank"
                   >+90 534 979 13 70</a
@@ -465,7 +414,7 @@
           <form
             class="cf"
             id="cf"
-            action="https://formsubmit.co/husnytarik@outlook.com"
+            action="https://formsubmit.co/villamirakalkan@gmail.com"
             method="POST"
           >
             <input
@@ -478,39 +427,41 @@
 
             <div class="cf2">
               <div class="cfg">
-                <label for="name">Full Name</label>
+                <label for="name" data-i18n="form.name.lbl">Full Name</label>
                 <input
                   type="text"
                   id="name"
                   name="name"
                   placeholder="Jane Smith"
+                  data-i18n-ph="form.name.ph"
                   required
                 />
               </div>
               <div class="cfg">
-                <label for="email">Email</label>
+                <label for="email" data-i18n="form.email.lbl">Email</label>
                 <input
                   type="email"
                   id="email"
                   name="email"
                   placeholder="jane@example.com"
+                  data-i18n-ph="form.email.ph"
                   required
                 />
               </div>
             </div>
             <div class="cf2">
               <div class="cfg">
-                <label for="ci">Arrival</label>
+                <label for="ci" data-i18n="form.arrival.lbl">Arrival</label>
                 <input type="date" id="ci" name="checkin" />
               </div>
               <div class="cfg">
-                <label for="co">Departure</label>
+                <label for="co" data-i18n="form.departure.lbl">Departure</label>
                 <input type="date" id="co" name="checkout" />
               </div>
             </div>
             <div class="cf2">
               <div class="cfg">
-                <label for="guests">Guests</label>
+                <label for="guests" data-i18n="form.guests.lbl">Guests</label>
                 <input
                   type="number"
                   id="guests"
@@ -521,25 +472,27 @@
                 />
               </div>
               <div class="cfg">
-                <label for="phone">Phone (optional)</label>
+                <label for="phone" data-i18n="form.phone.lbl">Phone (optional)</label>
                 <input
                   type="tel"
                   id="phone"
                   name="phone"
                   placeholder="+90 XXX XXX XX XX"
+                  data-i18n-ph="form.phone.ph"
                 />
               </div>
             </div>
             <div class="cfg">
-              <label for="msg">Message</label>
+              <label for="msg" data-i18n="form.msg.lbl">Message</label>
               <textarea
                 id="msg"
                 name="message"
                 rows="4"
                 placeholder="Special requests, questions…"
+                data-i18n-ph="form.msg.ph"
               ></textarea>
             </div>
-            <button type="submit" class="btn-submit">Send Enquiry</button>
+            <button type="submit" class="btn-submit" data-i18n="form.submit">Send Enquiry</button>
           </form>
         </div>
       </div>
@@ -552,11 +505,11 @@
         <small>Kalkan · Turkey</small>
       </div>
       <nav class="f-links">
-        <a href="#about">The Villa</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#amenities">Amenities</a>
-        <a href="#calendar">Availability</a>
-        <a href="#contact">Contact</a>
+        <a href="#about" data-i18n="footer.villa">The Villa</a>
+        <a href="#gallery" data-i18n="footer.gallery">Gallery</a>
+        <a href="#amenities" data-i18n="footer.amenities">Amenities</a>
+        <a href="#calendar" data-i18n="footer.availability">Availability</a>
+        <a href="#contact" data-i18n="footer.contact">Contact</a>
       </nav>
       <div class="f-copy">&copy; 2025 Villa Mira Kalkan</div>
     </footer>
