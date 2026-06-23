@@ -111,6 +111,11 @@ img {
   margin-top: 2px;
 }
 
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
 .nav-links {
   list-style: none;
   display: flex;
@@ -1181,9 +1186,29 @@ footer {
 .f-links a:hover {
   color: var(--teal);
 }
+.f-bottom {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+}
 .f-copy {
   font-size: 0.65rem;
   color: var(--text3);
+}
+.footer-credit-logo {
+  display: flex;
+  align-items: center;
+  opacity: 0.45;
+  transition: opacity 0.25s;
+}
+.footer-credit-logo:hover {
+  opacity: 0.85;
+}
+.footer-credit-logo img {
+  height: 18px;
+  width: auto;
+  display: block;
+  object-fit: contain;
 }
 
 /* ─────────────────── REVEAL ─────────────────────── */
@@ -1245,6 +1270,9 @@ footer {
   }
   .nav.stuck {
     padding: 0.9rem 1.5rem;
+  }
+  .nav-right {
+    gap: 0.8rem;
   }
   .nav-links {
     display: none;
