@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAQ — Villa Mira Kalkan</title>
+    <meta name="description" content="Frequently asked questions about Villa Mira Kalkan — location, check-in, pool, WiFi, booking and more." />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,wght@0,300;0,400;1,300;1,400&family=Outfit:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="icon" type="image/png" href="img/logo.png" />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      /* ── FAQ page ───────────────────────────── */
+      .faq-hero {
+        padding: 10rem 3rem 5rem;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+      }
+      .faq-hero-blob {
+        position: absolute;
+        width: 600px;
+        height: 600px;
+        border-radius: 60% 40% 55% 45% / 45% 55% 40% 60%;
+        background: radial-gradient(circle, rgba(93,202,165,.07) 0%, transparent 70%);
+        top: -100px;
+        left: 50%;
+        transform: translateX(-50%);
+        pointer-events: none;
+      }
+      .faq-hero h1 {
+        font-family: var(--serif);
+        font-size: clamp(2.4rem, 5vw, 4rem);
+        font-weight: 300;
+        line-height: 1.1;
+        margin: 1rem 0 1.2rem;
+      }
+      .faq-hero h1 em {
+        font-style: italic;
+        color: var(--teal);
+      }
+      .faq-hero p {
+        font-size: 1rem;
+        color: var(--text2);
+        font-weight: 300;
+        max-width: 480px;
+        margin: 0 auto;
+        line-height: 1.8;
+      }
+
+      .faq-wrap {
+        max-width: 760px;
+        margin: 0 auto;
+        padding: 2rem 3rem 7rem;
+      }
+
+      .faq-group {
+        margin-bottom: 3.5rem;
+      }
+      .faq-group-title {
+        font-size: 0.6rem;
+        font-weight: 500;
+        letter-spacing: 0.28em;
+        text-transform: uppercase;
+        color: var(--teal);
+        margin-bottom: 1.2rem;
+        display: block;
+      }
+
+      details {
+        border-top: 1px solid var(--border);
+      }
+      details:last-child {
+        border-bottom: 1px solid var(--border);
+      }
+      summary {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 1rem;
+        padding: 1.3rem 0;
+        cursor: pointer;
+        list-style: none;
+        font-size: 0.95rem;
+        font-weight: 400;
+        color: var(--text);
+        transition: color 0.2s;
+      }
+      summary::-webkit-details-marker { display: none; }
+      summary:hover { color: var(--teal); }
+      .faq-icon {
+        flex-shrink: 0;
+        width: 20px;
+        height: 20px;
+        border: 1px solid var(--teal-line);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: background 0.2s, border-color 0.2s;
+      }
+      .faq-icon svg {
+        width: 10px;
+        height: 10px;
+        color: var(--teal);
+        transition: transform 0.3s var(--ease);
+      }
+      details[open] .faq-icon {
+        background: var(--teal);
+        border-color: var(--teal);
+      }
+      details[open] .faq-icon svg {
+        color: var(--forest2);
+        transform: rotate(45deg);
+      }
+      .faq-body {
+        padding: 0 0 1.4rem;
+        font-size: 0.9rem;
+        color: var(--text2);
+        font-weight: 300;
+        line-height: 1.85;
+        max-width: 640px;
+      }
+
+      .faq-cta {
+        text-align: center;
+        padding: 3rem 3rem 6rem;
+        border-top: 1px solid var(--border);
+      }
+      .faq-cta p {
+        color: var(--text2);
+        font-weight: 300;
+        margin-bottom: 1.5rem;
+      }
+
+      @media (max-width: 768px) {
+        .faq-hero { padding: 8rem 1.5rem 3.5rem; }
+        .faq-wrap { padding: 1.5rem 1.5rem 5rem; }
+        .faq-cta { padding: 2.5rem 1.5rem 5rem; }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- NAV -->
+    <nav class="nav" id="nav">
+      <a href="index.html" class="nav-logo"
+        ><b>Villa Mira</b><small>Kalkan · Turkey</small></a
+      >
+      <div class="nav-right">
+        <ul class="nav-links">
+          <li><a href="index.html#about" data-i18n="nav.villa">The Villa</a></li>
+          <li><a href="index.html#gallery" data-i18n="nav.gallery">Gallery</a></li>
+          <li><a href="index.html#amenities" data-i18n="nav.amenities">Amenities</a></li>
+          <li><a href="index.html#calendar" data-i18n="nav.availability">Availability</a></li>
+          <li><a href="sss.html" class="active-page" data-i18n="nav.faq">FAQ</a></li>
+          <li><a href="index.html#contact" class="nav-book" data-i18n="nav.book">Book Now</a></li>
+        </ul>
+        <div class="lang-sw">
+          <button class="lang-btn" data-lang="en">EN</button>
+          <button class="lang-btn" data-lang="tr">TR</button>
+          <button class="lang-btn" data-lang="ru">RU</button>
+        </div>
+        <button class="nav-burger" id="burger" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+
+    <div class="drawer" id="drawer">
+      <button class="dx" id="dx">✕</button>
+      <ul>
+        <li><a href="index.html#about" data-i18n="nav.villa">The Villa</a></li>
+        <li><a href="index.html#gallery" data-i18n="nav.gallery">Gallery</a></li>
+        <li><a href="index.html#amenities" data-i18n="nav.amenities">Amenities</a></li>
+        <li><a href="index.html#calendar" data-i18n="nav.availability">Availability</a></li>
+        <li><a href="sss.html" data-i18n="nav.faq">FAQ</a></li>
+        <li><a href="index.html#contact" data-i18n="nav.book">Book Now</a></li>
+      </ul>
+    </div>
+
+    <!-- HERO -->
+    <div class="faq-hero">
+      <div class="faq-hero-blob"></div>
+      <span class="lbl" data-i18n="faq.lbl">FAQ</span>
+      <h1 data-i18n-html="faq.h1">Frequently<br /><em>Asked Questions</em></h1>
+      <p data-i18n="faq.sub">Everything you need to know before your stay at Villa Mira Kalkan.</p>
+    </div>
+
+    <!-- FAQ CONTENT -->
+    <div class="faq-wrap">
+
+      <!-- Group 1: The Villa -->
+      <div class="faq-group">
+        <span class="faq-group-title" data-i18n="faq.g1.title">The Villa</span>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q1">Where is Villa Mira located?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a1">Villa Mira is nestled in the green hills above Kalkan, a charming coastal town on Turkey's Turquoise Coast — approximately 20 km from Kaş and 80 km from Antalya Airport.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q2">How many guests can the villa accommodate?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a2">The villa accommodates up to 8 guests across 4 spacious en-suite bedrooms.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q3">Is the pool heated?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a3">Yes. The private infinity pool is heated and open from sunrise. It offers panoramic views across Kalkan Bay and the Aegean Sea.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q4">Is there parking at the villa?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a4">Yes. There is private gated parking for two vehicles, monitored 24/7.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q5">Is WiFi available?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a5">Yes. High-speed fibre internet is available throughout the villa, including all terraces.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q6">Are pets allowed?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a6">Pets are not permitted at Villa Mira, to maintain a peaceful and clean environment for all guests.</p>
+        </details>
+      </div>
+
+      <!-- Group 2: Booking -->
+      <div class="faq-group">
+        <span class="faq-group-title" data-i18n="faq.g2.title">Booking & Stay</span>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q7">What are the check-in and check-out times?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a7">Check-in is from 15:00 and check-out is by 11:00. Early or late arrangements may be possible upon request.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q8">What is the minimum stay?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a8">The minimum stay is 7 nights during peak season. Shorter stays may be considered in off-peak periods — please enquire directly.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q9">What is the cancellation policy?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a9">Cancellation terms depend on the booking platform or direct rental agreement. Please contact us for full details before confirming your reservation.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q10">Can a private chef be arranged?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a10">Yes. A private chef can be arranged on request through our concierge service. Please mention this when making your enquiry.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q11">How do I make a reservation?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a11">Check availability on our homepage calendar and send an enquiry via the contact form, email, or WhatsApp. We reply within 24 hours.</p>
+        </details>
+      </div>
+
+      <!-- Group 3: Around Kalkan -->
+      <div class="faq-group">
+        <span class="faq-group-title" data-i18n="faq.g3.title">Around Kalkan</span>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q12">What is there to do near the villa?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a12">Kalkan offers boat trips, scuba diving, water sports, and excellent seafood restaurants. Nearby highlights include Kaputaş Beach (10 km), the ancient Lycian city of Xanthos, and the stunning Saklikent Gorge. The old town's cobbled streets and rooftop terraces are perfect for evening dining.</p>
+        </details>
+
+        <details>
+          <summary>
+            <span data-i18n="faq.q13">How far is the nearest beach?</span>
+            <span class="faq-icon"><svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"><path d="M6 2v8M2 6h8"/></svg></span>
+          </summary>
+          <p class="faq-body" data-i18n="faq.a13">Kalkan's beach club platforms are a short drive down to the harbour. The iconic Kaputaş Beach — one of Turkey's most beautiful — is approximately 10 km away. Boat trips to secluded coves can also be arranged.</p>
+        </details>
+      </div>
+
+    </div>
+
+    <!-- CTA -->
+    <div class="faq-cta">
+      <p data-i18n="faq.cta.p">Still have questions? We're happy to help.</p>
+      <a href="index.html#contact" class="btn-teal" data-i18n="faq.cta.btn">Contact Us</a>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+      <div class="f-brand">
+        <b>Villa Mira</b>
+        <small>Kalkan · Turkey</small>
+      </div>
+      <nav class="f-links">
+        <a href="index.html#about" data-i18n="footer.villa">The Villa</a>
+        <a href="index.html#gallery" data-i18n="footer.gallery">Gallery</a>
+        <a href="index.html#amenities" data-i18n="footer.amenities">Amenities</a>
+        <a href="index.html#calendar" data-i18n="footer.availability">Availability</a>
+        <a href="index.html#contact" data-i18n="footer.contact">Contact</a>
+      </nav>
+      <div class="f-bottom">
+        <div class="f-copy">&copy; 2025 Villa Mira Kalkan</div>
+        <a
+          href="https://larenea.com"
+          target="_blank"
+          rel="noopener"
+          class="footer-credit-logo"
+        >
+          <img src="assets/images/larenea-logo.png" alt="Larenea" />
+        </a>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+  </body>
+</html>
